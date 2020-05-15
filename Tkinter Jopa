@@ -1,0 +1,43 @@
+#Стоп-стоп
+#Ткинетер ранее скачена билеотка питона
+
+from tkinter import *  
+from tkinter.ttk import Progressbar  
+from tkinter import ttk  
+from tkinter import Menu
+from tkinter import messagebox  
+from tkinter import scrolledtext
+from tkinter.ttk import Checkbutton
+
+def clicked():  
+    lbl.configure(text="Уникальный код hjks-dfh3-hjs4-7fgsf")
+
+window = Tk()  
+window.title("Добро пожаловать в Penyagon.Hack V.1.0")  
+window.geometry('500x300') 
+lbl = Label(window, text="Чтобы взломать другое надо перезапустить программу")  
+lbl.grid(column=0, row=6)   
+lbl = Label(window, text="Взломать Пентагон", font=("Arial Bold", 10))  
+lbl.grid(column=0, row=0)  
+btn = Button(window, text="Начать!", command=clicked)  
+btn.grid(column=1, row=0) 
+txt = scrolledtext.ScrolledText(window, width=40, height=10)  
+txt.grid(column=0, row=1) 
+txt.insert(INSERT, 'Start \n Get ip \n Get password \n Pasword:dsgdhasdjgashj \n Ip:145.3452.13.4 \n Enter ip \n Enter paasword \n Hack!' )
+chk_state = BooleanVar()  
+chk_state.set(True)
+chk = Checkbutton(window, text='Данные верные?', var=chk_state)  
+chk.grid(column=0, row=2)  
+lbl = Label(window, text="Взломать жёпу", font=("Arial Bold", 10))  
+lbl.grid(column=0, row=3)  
+btn = Button(window, text="Начать!", command=clicked)  
+btn.grid(column=1, row=3) 
+spin = Spinbox(window, from_=0, to=100, width=5)  
+spin.grid(column=0, row=5) 
+style = ttk.Style()  
+style.theme_use('default')  
+style.configure("black.Horizontal.TProgressbar", background='black')  
+bar = Progressbar(window, length=200, style='black.Horizontal.TProgressbar')  
+bar['value'] = 70  
+bar.grid(column=0, row=4)  
+window.mainloop() 
